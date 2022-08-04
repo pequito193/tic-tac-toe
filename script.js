@@ -75,19 +75,19 @@ const gameBoard = (() => {
                 }
             })
         })
-
-        // Add event listener to reset button
-        const reset = document.querySelector('.reset')
-        reset.addEventListener('click', e => {
-            document.querySelectorAll('.grid').forEach(grid => { 
-                grid.innerText = '';
-                for (let i = 0; i < board.length; i++) {
-                    board[i] = '';
-                }
-            })
-        })
     }
     return {play, board};
 })();
+
+// Add event listener to reset button
+const reset = document.querySelector('.reset')
+reset.addEventListener('click', e => {
+    document.querySelectorAll('.grid').forEach(grid => { 
+        grid.innerText = '';
+        for (let i = 0; i < gameBoard.board.length; i++) {
+            gameBoard.board[i] = '';
+        }
+    })
+})
 
 gameBoard.play();
