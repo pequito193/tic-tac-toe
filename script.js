@@ -54,7 +54,7 @@ const gameBoard = (() => {
                     winningCombinations.forEach((item, index) => {
                         if (board[item[0]] == 'X' && board[item[1]] == 'X' && board[item[2]] == 'X') {
                             const text = document.querySelector('.text')
-                            text.textContent = 'Player 1 wins!!'
+                            text.textContent = "Player 1 wins!! Now it is player 2's turn (O)"
                             document.querySelectorAll('.grid').forEach(grid => { 
                                 grid.innerText = '';
                                 for (let i = 0; i < board.length; i++) {
@@ -63,7 +63,7 @@ const gameBoard = (() => {
                             })
                         } else if (board[item[0]] == 'O' && board[item[1]] == 'O' && board[item[2]] == 'O') {
                             const text = document.querySelector('.text')
-                            text.textContent = 'Player 2 wins!!'
+                            text.textContent = "Player 2 wins!! Now it is player 1's turn(X)"
                             document.querySelectorAll('.grid').forEach(grid => { 
                                 grid.innerText = '';
                                 for (let i = 0; i < board.length; i++) {
