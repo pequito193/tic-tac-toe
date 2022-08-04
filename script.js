@@ -37,7 +37,7 @@ const gameBoard = (() => {
                     grid.innerText = symbolOne;
                     board[index] = symbolOne;
 
-                    // Change symbol to other player's symbol
+                    // Change active player
                     holderSymbol = symbolTwo;
                     symbolTwo = symbolOne;
                     symbolOne = holderSymbol;
