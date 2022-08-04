@@ -50,7 +50,7 @@ const gameBoard = (() => {
                         text.textContent = "Player 2's turn (O)"
                     }
 
-                    // Check if there is a winner
+                    // Check if there is a winner, and reset board if there is
                     winningCombinations.forEach((item, index) => {
                         if (board[item[0]] == 'X' && board[item[1]] == 'X' && board[item[2]] == 'X') {
                             const text = document.querySelector('.text')
