@@ -5,8 +5,13 @@ body {
 
 h1 {
     text-align: center;
-    margin: 8vh 0 15vh;
+    margin: 5vh 0 9vh;
     font-size: 4rem;
+}
+
+.text {
+    font-size: 2rem;
+    text-align: center;
 }
 
 .container {
@@ -22,6 +27,7 @@ h1 {
     /* border: 2px solid rebeccapurple; */
 }
 
+.won,
 .grid {
     background-color: aquamarine;
     height: 14vh;
@@ -36,4 +42,18 @@ h1 {
 .grid:hover {
     background-color: rgb(103, 224, 184);
     cursor: pointer;
+}
+
+.reset {
+    margin: 7vh auto;
+    display: table;
+    padding: 1vh 2vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1,1.1);
 }
