@@ -1,12 +1,12 @@
 body {
     margin: 0;
-    background-color: rgba(112, 197, 43, 0.884);
+    background-color: rgba(112, 197, 43, 0.781);
 }
 
 h1 {
     text-align: center;
-    margin: 10vh 0 15vh;
-    font-size: 3rem;
+    margin: 8vh 0 15vh;
+    font-size: 4rem;
 }
 
 .container {
@@ -16,12 +16,24 @@ h1 {
     width: fit-content;
     height: fit-content;
     margin: 0 auto;
+    background-color: white;
+    gap: 0.75vh;
+    border: 0.75vh solid white;
     /* border: 2px solid rebeccapurple; */
 }
 
 .grid {
-    border: 2px solid white;
     background-color: aquamarine;
-    height: 12vh;
-    width: 12vh;
+    height: 14vh;
+    width: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: rgb(56, 138, 111);
+}
+
+.grid:hover {
+    background-color: rgb(103, 224, 184);
+    cursor: pointer;
 }
