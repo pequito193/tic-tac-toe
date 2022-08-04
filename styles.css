@@ -1,3 +1,27 @@
 body {
     margin: 0;
+    background-color: rgba(112, 197, 43, 0.884);
+}
+
+h1 {
+    text-align: center;
+    margin: 10vh 0 15vh;
+    font-size: 3rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.grid {
+    border: 2px solid white;
+    background-color: aquamarine;
+    height: 12vh;
+    width: 12vh;
 }
